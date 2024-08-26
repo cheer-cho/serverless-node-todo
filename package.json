@@ -1,0 +1,13 @@
+{
+  "name": "aws-lambda-serverless-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "deploy:dev": "serverless deploy --stage dev --region us-east-2",
+    "deploy:prod": "serverless deploy --stage prod --region us-east-2"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
+  }
+}
