@@ -1,6 +1,19 @@
 ### GET root
-https://js6y4m8bwg.execute-api.us-east-2.amazonaws.com/
+GET https://vjwwd1svxj.execute-api.us-east-2.amazonaws.com/health
 
 
-### GET test
-https://js6y4m8bwg.execute-api.us-east-2.amazonaws.com/test
+### GET tasks
+GET https://vjwwd1svxj.execute-api.us-east-2.amazonaws.com/api/v1/tasks
+
+
+### GET tasks by id
+GET https://vjwwd1svxj.execute-api.us-east-2.amazonaws.com/api/v1/tasks/1
+
+
+### POST task
+POST https://vjwwd1svxj.execute-api.us-east-2.amazonaws.com/api/v1/tasks
+Content-Type: application/json
+
+{
+  "todo": "Do something"
+}

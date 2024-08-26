@@ -4,10 +4,13 @@
   "description": "",
   "scripts": {
     "deploy:dev": "serverless deploy --stage dev --region us-east-2",
-    "deploy:prod": "serverless deploy --stage prod --region us-east-2"
+    "deploy:prod": "serverless deploy --stage prod --region us-east-2",
+    "node:dev": "node src/handler.js"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.637.0",
     "express": "^4.19.2",
-    "serverless-http": "^3.2.0"
+    "serverless-http": "^3.2.0",
+    "uuid": "^10.0.0"
   }
 }
